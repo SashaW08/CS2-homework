@@ -74,6 +74,7 @@ public class SwingControlDemo implements ActionListener {
     }
 
     private void showEventDemo() {
+        //
 
         JButton okButton = new JButton("OK");
         JButton submitButton = new JButton("Submit");
