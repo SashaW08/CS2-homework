@@ -32,7 +32,7 @@ public class Medium2 {
     private void showEventDemo() {
         JButton button1 = new JButton("Button 1");
         JButton button2 = new JButton("Button 2");
-        JButton button3 = new JButton("button 3");
+        JButton button3 = new JButton("Button 3");
         JButton button4 = new JButton("Button 4");
         JButton button5 = new JButton("Button 5");
         JButton button6 = new JButton("Button 6");

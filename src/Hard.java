@@ -11,6 +11,8 @@ public class Hard {
     private JPanel borderpanel;
     private JPanel numberpanel;
     private JPanel panelpanel;
+    private JPanel morepanel;
+
     private JMenuBar mb;
     private JMenu file, edit, help;
     private JTextArea ta; //typing area
@@ -42,7 +44,6 @@ public class Hard {
         ta = new JTextArea();
         ta.setBounds(0, 500, WIDTH-100, HEIGHT-300);
         mainFrame.add(mb);  //add menu bar
-        mainFrame.add(ta);//add typing area
         mainFrame.setJMenuBar(mb); //set menu bar
 
         mainFrame.addWindowListener(new WindowAdapter() {
@@ -54,16 +55,22 @@ public class Hard {
         borderpanel = new JPanel();
         numberpanel = new JPanel();
         panelpanel = new JPanel();
+        morepanel = new JPanel();
         controlPanel.setLayout(new GridLayout(3,3)); //set the layout of the panel
         borderpanel.setLayout(new GridLayout(2,1));
         numberpanel.setLayout(new GridLayout(1,9));
         panelpanel.setLayout(new GridLayout(1,2));
+        morepanel.setLayout(new GridLayout(2,1));
 
         panelpanel.add(controlPanel);
         panelpanel.add(borderpanel);
 
+        mainFrame.add(morepanel);
+
+        morepanel.add(panelpanel);
+        morepanel.add(ta);//add typing area
+
         mainFrame.add(numberpanel, BorderLayout.SOUTH);
-        mainFrame.add(panelpanel, BorderLayout.NORTH);
 
         mainFrame.setVisible(true);
     }

@@ -30,15 +30,9 @@ public class Easy1  {
     private void showEventDemo() {
         JButton button1 = new JButton("Button 1");
         JButton button2 = new JButton("Button 2");
-        JButton button3 = new JButton("button 3");
+        JButton button3 = new JButton("Button 3");
         JButton button4 = new JButton("Button 4");
-        JButton button5 = new JButton("button 5");
-
-        button1.setActionCommand("Button 1");
-        button2.setActionCommand("Button 2");
-        button3.setActionCommand("Button 3");
-        button4.setActionCommand("Button 4");
-        button5.setActionCommand("Button 5");
+        JButton button5 = new JButton("Button 5");
 
         mainFrame.add(button1);
         mainFrame.add(button2);
